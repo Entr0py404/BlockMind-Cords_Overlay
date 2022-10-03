@@ -1,0 +1,60 @@
+{
+  "_fv": 33,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Current Cords: <VAR:CurrentCords>",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Current Cords: <VAR:CurrentCords>",
+          "x": 1,
+          "y": 1
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:TargetCords>",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "<VAR:TargetCords>",
+          "x": 1,
+          "y": 10
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:DeathCords>",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "<VAR:DeathCords>",
+          "x": 1,
+          "y": 19
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "CordsOverlayDisplayOverlayIngame"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 1,
+      "oy": 1,
+      "snapOnGrid": true
+    }
+  }
+}

@@ -1,0 +1,609 @@
+{
+  "mod_elements": [
+    {
+      "name": "CordsOverlay",
+      "type": "overlay",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cords_overlay",
+      "path": "~/CordsOverlay"
+    },
+    {
+      "name": "ToggleCordsOverlay",
+      "type": "keybind",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toggle_cords_overlay",
+      "path": "~/CordsOverlay"
+    },
+    {
+      "name": "CordsOverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cords_overlay_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CordsOverlay"
+    },
+    {
+      "name": "ToggleCordsOverlayOnKeyReleased",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toggle_cords_overlay_on_key_released",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CordsOverlay"
+    },
+    {
+      "name": "SayCurrentCordsCommandExecuted",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "say_current_cords_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Command Procedures"
+    },
+    {
+      "name": "SayCurrentCords",
+      "type": "command",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "say_current_cords",
+      "path": "~/Commands"
+    },
+    {
+      "name": "ToggleCordsOverlayOnKeyPressed",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toggle_cords_overlay_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CordsOverlay"
+    },
+    {
+      "name": "Listcords",
+      "type": "command",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "listcords",
+      "path": "~/Commands"
+    },
+    {
+      "name": "Cordscommands",
+      "type": "command",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cordscommands",
+      "path": "~/Commands"
+    },
+    {
+      "name": "Saycords",
+      "type": "command",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "saycords",
+      "path": "~/Commands"
+    },
+    {
+      "name": "Removecords",
+      "type": "command",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "removecords",
+      "path": "~/Commands"
+    },
+    {
+      "name": "Setcords",
+      "type": "command",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setcords",
+      "path": "~/Commands"
+    },
+    {
+      "name": "Setcordsmanually",
+      "type": "command",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setcordsmanually",
+      "path": "~/Commands"
+    },
+    {
+      "name": "Targetcords",
+      "type": "command",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "targetcords",
+      "path": "~/Commands"
+    },
+    {
+      "name": "ListcordsCommandExecuted",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "listcords_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Command Procedures"
+    },
+    {
+      "name": "SetcordsCommandExecuted",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setcords_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Command Procedures"
+    },
+    {
+      "name": "CordscommandsCommandExecuted",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cordscommands_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Command Procedures"
+    },
+    {
+      "name": "SetcordsmanuallyCommandExecuted",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setcordsmanually_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Command Procedures"
+    },
+    {
+      "name": "OnPlayerDies",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_player_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Command Procedures"
+    },
+    {
+      "name": "ClearDeathCordsCommandExecuted",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clear_death_cords_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Command Procedures"
+    },
+    {
+      "name": "ClearDeathCords",
+      "type": "command",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clear_death_cords",
+      "path": "~/Commands"
+    },
+    {
+      "name": "RemoveCordsByNameCommandExecuted",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_cords_by_name_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Command Procedures"
+    },
+    {
+      "name": "RemoveCordsByNumberCommandExecuted",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_cords_by_number_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Command Procedures"
+    },
+    {
+      "name": "TargetcordsByNameCommandExecuted",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "targetcords_by_name_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Command Procedures"
+    },
+    {
+      "name": "TargetcordsByNumberCommandExecuted",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "targetcords_by_number_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Command Procedures"
+    },
+    {
+      "name": "ClearTargetCords",
+      "type": "command",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clear_target_cords",
+      "path": "~/Commands"
+    },
+    {
+      "name": "ClearTargetCordsCommandExecuted",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clear_target_cords_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Command Procedures"
+    },
+    {
+      "name": "SayCordsByNameCommandExecuted",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "say_cords_by_name_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Command Procedures"
+    },
+    {
+      "name": "SayCordsByNumberCommandExecuted",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "say_cords_by_number_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Command Procedures"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "ShowCordsOverlay",
+      "type": "logic",
+      "scope": "global",
+      "value": "true"
+    },
+    {
+      "name": "CurrentCords",
+      "type": "string",
+      "scope": "global",
+      "value": ""
+    },
+    {
+      "name": "CordsSlot1_Name",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "CordsSlot1_Cords",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "CordsSlot2_Name",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "CordsSlot2_Cords",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "CordsSlot3_Name",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "CordsSlot3_Cords",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "CordsSlot4_Name",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "CordsSlot4_Cords",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "CordsSlot5_Name",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "CordsSlot5_Cords",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "TargetCords",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "DeathCords",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "key.blockmind_cords_overlay.toggle_cords_overlay": "Toggle Cords Overlay",
+      "block.cords.death_chest": "Death Chest",
+      "key.cords.toggle_cords_overlay": "Toggle Cords Overlay",
+      "key.blockmind_cords.toggle_cords_overlay": "Toggle Cords Overlay"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "CordsOverlay",
+        "children": []
+      },
+      {
+        "name": "Commands",
+        "children": []
+      },
+      {
+        "name": "Command Procedures",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "blockmind_cords_overlay",
+    "modName": "BlockMind - Cords Overlay",
+    "version": "1.0.0",
+    "author": "Entropy",
+    "websiteURL": "https://mcreator.net",
+    "license": "MIT License",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "credits": "Made with MCreator",
+    "modElementsPackage": "net.blockmind.cordsoverlay",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200234517
+}

@@ -1,0 +1,22 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="MIT License"
+
+[[mods]]
+modId="blockmind_cords_overlay"
+version="1.0.0"
+displayName="BlockMind - Cords Overlay"
+credits="Made with MCreator"
+displayURL="https://mcreator.net"
+authors="Entropy"
+
+[[dependencies.blockmind_cords_overlay]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+
