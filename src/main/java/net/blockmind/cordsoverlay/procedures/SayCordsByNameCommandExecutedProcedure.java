@@ -5,10 +5,8 @@ import net.minecraftforge.server.ServerLifecycleHooks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.MinecraftServer;
-import net.minecraft.network.chat.TextComponent;
-import net.minecraft.network.chat.ChatType;
+import net.minecraft.network.chat.Component;
 import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.Util;
 
 import net.blockmind.cordsoverlay.network.BlockmindCordsOverlayModVariables;
 
@@ -25,10 +23,10 @@ public class SayCordsByNameCommandExecutedProcedure {
 			if (!world.isClientSide()) {
 				MinecraftServer _mcserv = ServerLifecycleHooks.getCurrentServer();
 				if (_mcserv != null)
-					_mcserv.getPlayerList().broadcastMessage(
-							new TextComponent(((entity.getCapability(BlockmindCordsOverlayModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					_mcserv.getPlayerList().broadcastSystemMessage(
+							Component.literal(((entity.getCapability(BlockmindCordsOverlayModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 									.orElse(new BlockmindCordsOverlayModVariables.PlayerVariables())).CordsSlot1_Cords)),
-							ChatType.SYSTEM, Util.NIL_UUID);
+							false);
 			}
 		} else if ((StringArgumentType.getString(arguments, "SlotName"))
 				.equals((entity.getCapability(BlockmindCordsOverlayModVariables.PLAYER_VARIABLES_CAPABILITY, null)
@@ -36,10 +34,10 @@ public class SayCordsByNameCommandExecutedProcedure {
 			if (!world.isClientSide()) {
 				MinecraftServer _mcserv = ServerLifecycleHooks.getCurrentServer();
 				if (_mcserv != null)
-					_mcserv.getPlayerList().broadcastMessage(
-							new TextComponent(((entity.getCapability(BlockmindCordsOverlayModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					_mcserv.getPlayerList().broadcastSystemMessage(
+							Component.literal(((entity.getCapability(BlockmindCordsOverlayModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 									.orElse(new BlockmindCordsOverlayModVariables.PlayerVariables())).CordsSlot1_Cords)),
-							ChatType.SYSTEM, Util.NIL_UUID);
+							false);
 			}
 		} else if ((StringArgumentType.getString(arguments, "SlotName"))
 				.equals((entity.getCapability(BlockmindCordsOverlayModVariables.PLAYER_VARIABLES_CAPABILITY, null)
@@ -47,10 +45,10 @@ public class SayCordsByNameCommandExecutedProcedure {
 			if (!world.isClientSide()) {
 				MinecraftServer _mcserv = ServerLifecycleHooks.getCurrentServer();
 				if (_mcserv != null)
-					_mcserv.getPlayerList().broadcastMessage(
-							new TextComponent(((entity.getCapability(BlockmindCordsOverlayModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					_mcserv.getPlayerList().broadcastSystemMessage(
+							Component.literal(((entity.getCapability(BlockmindCordsOverlayModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 									.orElse(new BlockmindCordsOverlayModVariables.PlayerVariables())).CordsSlot1_Cords)),
-							ChatType.SYSTEM, Util.NIL_UUID);
+							false);
 			}
 		} else if ((StringArgumentType.getString(arguments, "SlotName"))
 				.equals((entity.getCapability(BlockmindCordsOverlayModVariables.PLAYER_VARIABLES_CAPABILITY, null)
@@ -58,10 +56,10 @@ public class SayCordsByNameCommandExecutedProcedure {
 			if (!world.isClientSide()) {
 				MinecraftServer _mcserv = ServerLifecycleHooks.getCurrentServer();
 				if (_mcserv != null)
-					_mcserv.getPlayerList().broadcastMessage(
-							new TextComponent(((entity.getCapability(BlockmindCordsOverlayModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					_mcserv.getPlayerList().broadcastSystemMessage(
+							Component.literal(((entity.getCapability(BlockmindCordsOverlayModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 									.orElse(new BlockmindCordsOverlayModVariables.PlayerVariables())).CordsSlot1_Cords)),
-							ChatType.SYSTEM, Util.NIL_UUID);
+							false);
 			}
 		} else if ((StringArgumentType.getString(arguments, "SlotName"))
 				.equals((entity.getCapability(BlockmindCordsOverlayModVariables.PLAYER_VARIABLES_CAPABILITY, null)
@@ -69,10 +67,10 @@ public class SayCordsByNameCommandExecutedProcedure {
 			if (!world.isClientSide()) {
 				MinecraftServer _mcserv = ServerLifecycleHooks.getCurrentServer();
 				if (_mcserv != null)
-					_mcserv.getPlayerList().broadcastMessage(
-							new TextComponent(((entity.getCapability(BlockmindCordsOverlayModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					_mcserv.getPlayerList().broadcastSystemMessage(
+							Component.literal(((entity.getCapability(BlockmindCordsOverlayModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 									.orElse(new BlockmindCordsOverlayModVariables.PlayerVariables())).CordsSlot1_Cords)),
-							ChatType.SYSTEM, Util.NIL_UUID);
+							false);
 			}
 		}
 	}

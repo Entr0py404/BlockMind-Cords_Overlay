@@ -2,7 +2,7 @@ package net.blockmind.cordsoverlay.procedures;
 
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.commands.CommandSourceStack;
 
 import net.blockmind.cordsoverlay.network.BlockmindCordsOverlayModVariables;
@@ -113,7 +113,7 @@ public class SetcordsCommandExecutedProcedure {
 			}
 		} else {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(new TextComponent("Cords name already exists in your list."), (false));
+				_player.displayClientMessage(Component.literal("Cords name already exists in your list."), (false));
 		}
 	}
 }
